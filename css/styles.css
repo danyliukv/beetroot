@@ -4,7 +4,7 @@ body {
     font-size: larger;
     width: fit-content;
   }
-  
+
   .box {
     display: flex;
     align-items: center;
@@ -17,4 +17,3 @@ body {
   .text {
     margin: 100px;
   }
-  
