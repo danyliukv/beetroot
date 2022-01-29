@@ -73,3 +73,11 @@ body {
 .link-color {
   color: #828282;
 }
+
+.text-shadow {
+  text-shadow: 0px 4px 4px;
+}
+
+.box-shadow {
+  box-shadow: 0px 3px 3px -3px #828282;
+}
