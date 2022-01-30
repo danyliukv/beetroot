@@ -75,9 +75,13 @@ body {
 }
 
 .text-shadow {
-  text-shadow: 0px 4px 4px;
+  text-shadow: 0px 4px 4px #00000040;
 }
 
 .box-shadow {
   box-shadow: 0px 3px 3px -3px #828282;
+}
+
+.link-color-black {
+  color: #070707;
 }
