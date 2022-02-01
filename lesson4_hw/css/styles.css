@@ -85,3 +85,7 @@ body {
 .link-color-black {
   color: #070707;
 }
+
+.content {
+  margin-top: 80px;
+}
