@@ -65,7 +65,7 @@ label {
   display: flex;
   float: left;
   position: absolute;
-  opacity: 0;
+  display: none;
   width: 20px;
   height: 20px;
   vertical-align: bottom;
