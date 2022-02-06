@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --c-sanfrancisco: #cc6699;
+  --c-amsterdam: #99cc99;
+  --c-new-delhi: #666699;
+  --c-belgrade: #996699;
+  --c-telaviv: #e2674a;
+  --c-borders: #ffffff;
+  --c-venice: #c24747;
+  --c-sydney: #339966;
+  --c-paris: #33cccc;
+  --c-tokyo: #669999;
+  --c-text: #ffffff;
+  --c-kyiv: #ffcc66;
+  --c-bg: #3399cc;
+  --fs-base: 18px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--c-bg);
+  font-size: var(--fs-base);
+  cursor: default;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.capitals-weather-container {
+  min-height: 350px;
+  max-width: 550px;
+  margin: auto;
+}
+
+.city-list {
+  border-collapse: collapse;
+  font-size: 0;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+
+.city-list-item {
+  height: 80px;
+  display: inline-block;
+  color: var(--c-text);
+  font-size: var(--fs-base);
+  text-align: center;
+  width: 25%;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+}
+
+.city-list-item-content:hover {
+  opacity: 1;
+}
+
+.city-list-item-content {
+  padding-top: 15px;
+  opacity: 0.6;
+  height: 100%;
+}
+
+.city-name {
+  font-weight: bold;
+  line-height: 19px;
+  font-size: 16px;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.lisbon {
+  background-color: var(--c-bg);
+}
+.paris {
+  background-color: var(--c-paris);
+}
+
+.belgrade {
+  background-color: var(--c-belgrade);
+}
+
+.venice {
+  background-color: var(--c-venice);
+}
+
+.telaviv {
+  background-color: var(--c-telaviv);
+}
+
+.kyiv {
+  background-color: var(--c-kyiv);
+}
+
+.amsterdam {
+  background-color: var(--c-amsterdam);
+}
+
+.tokyo {
+  background-color: var(--c-tokyo);
+}
+
+.sanfrancisco {
+  background-color: var(--c-sanfrancisco);
+}
+
+.sydney {
+  background-color: var(--c-sydney);
+}
+
+.newdelhi {
+  background-color: var(--c-new-delhi);
+}
