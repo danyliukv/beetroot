@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(/lesson7_hw/assets/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Londrina Outline';
+  src: url(/lesson7_hw/assets/fonts/londrina_outline/LondrinaOutline-Regular.ttf) format('truetype');
+}
