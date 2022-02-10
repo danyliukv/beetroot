@@ -28,13 +28,11 @@ ul {
 
 h1 {
   line-height: 54px;
-  font-weight: bold;
   font-size: 44px;
 }
 
 h2 {
   line-height: 54px;
-  font-weight: bold;
   font-size: 36px;
 }
 
@@ -125,11 +123,25 @@ h2 {
   padding-top: 50px;
 }
 
+.page-content-container {
+  justify-content: space-between;
+  display: flex;
+}
+
+.page-text {
+  font-weight: normal;
+  font-style: normal;
+  line-height: 28px;
+  font-size: 18px;
+}
+
 .image-container {
-  display: inline-block;
+  width: 100%;
+}
+
+.page-1-image {
   max-height: 500px;
   max-width: 600px;
-  width: 100%;
 }
 
 .page-1-button-container {
@@ -160,20 +172,21 @@ h2 {
   top: 5px;
 }
 
-.page-1-h2-header {
+.align-center {
   text-align: center;
   margin-top: 110px;
 }
 
 .survey-content-container {
-  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 40px;
   margin-top: 55px;
-  display: flex;
+  display: grid;
 }
 
 .survey-content-item {
-  display: inline-block;
-  margin-right: 45px;
+  max-height: 180px;
+  max-width: 240px;
 }
 
 .survey-content-item:last-child {
@@ -205,4 +218,54 @@ h2 {
 
 .page-2 {
   margin-top: 200px;
+}
+
+.footer {
+  border-top: 1px solid rgba(188, 208, 229, 0.496913);
+  padding: 100px 0px;
+  margin-top: 100px;
+}
+
+.footer-logo {
+  display: flex;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer-navigarion {
+  margin-right: 175px;
+}
+
+.footer-navigarion:last-child {
+  margin-right: 0px;
+}
+
+.footer-navigation-link {
+  color: var(--c-text);
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 35px;
+}
+
+.footer-input-area {
+  margin-left: 80px;
+}
+
+.input-field-container {
+  width: 325px;
+  height: 50px;
+}
+
+.input-field {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid #bcd0e5;
+}
+
+.footer-button-container {
+  margin-top: 30px;
 }
