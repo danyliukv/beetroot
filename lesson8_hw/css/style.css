@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+.background-image {
+  background: url('../assets/Frame\ 1.svg') bottom right no-repeat;
+  background-attachment: fixed;
+  background-size: 325px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+}
+
+p {
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 2em;
+}
+
+.container {
+  margin-top: 60px;
+  max-width: 1920px;
+  padding: 40px;
+  width: 100%;
+  margin: 80px auto 0px auto;
+}
+
+.header-content {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  max-width: 1920px;
+  width: 100%;
+  top: 60px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  margin-left: 40px;
+}
+
+.logo-container {
+  max-width: 245px;
+  max-height: 55px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-navigation-container {
+  width: 100%;
+}
+
+.page-navigation {
+  position: sticky;
+  top: 115px;
+  flex-direction: column;
+  max-width: 640px;
+  width: 100%;
+  margin-right: 200px;
+  display: flex;
+}
+
+.page-navigation-link {
+  letter-spacing: 0.04em;
+  margin-bottom: 90px;
+  line-height: 42px;
+  font-weight: 900;
+  font-size: 36px;
+  padding: 5px;
+}
+
+.top-line {
+  line-height: 48px;
+  font-size: 36px;
+  margin-bottom: 1em;
+}
+
+.top-line::before {
+  content: '';
+  display: block;
+  width: 80px;
+  border-top: 12px solid #000000;
+}
+
+.page-navigation-link::first-letter {
+  vertical-align: super;
+  font-weight: normal;
+  line-height: 25px;
+  font-size: 20px;
+}
+
+.page-navigation-link:last-child {
+  margin-bottom: 0px;
+}
+
+.highlight {
+  background-color: #c9c9c9;
+}
+
+.tiles-container {
+  grid-template-columns: repeat(4, 1fr);
+  /* column-gap: 25px; */
+  display: grid;
+}
+
+.tile-item {
+  padding: 100px 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  max-height: 280px;
+  max-width: 440px;
+  margin: 20px 10px;
+}
+
+.background-color-black {
+  background-color: #1a1a1a;
+}
