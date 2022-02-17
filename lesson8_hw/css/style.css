@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
 }
 
@@ -14,7 +14,7 @@ img {
 }
 
 .background-image {
-  background: url('../assets/Frame\ 1.svg') bottom right no-repeat;
+  background: url("../assets/Frame\ 1.svg") bottom right no-repeat;
   background-attachment: fixed;
   background-size: 325px;
 }
@@ -99,7 +99,7 @@ p {
 }
 
 .top-line::before {
-  content: '';
+  content: "";
   display: block;
   width: 80px;
   border-top: 12px solid #000000;
@@ -127,16 +127,53 @@ p {
 }
 
 .tile-item {
-  padding: 100px 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+   /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */ 
   background-color: #e6e6e6;
   max-height: 280px;
   max-width: 440px;
   margin: 20px 10px;
+  position: relative;
+  transform-origin: left right center;
+  transition: width 2s, height 2s, transform 2s;
 }
 
 .background-color-black {
   background-color: #1a1a1a;
+}
+
+.background-color-white {
+  background-color: #e6e6e6;
+}
+
+.img-container {
+   padding: 100px 70px;
+  max-width: 300px;
+  max-height: 60px;
+  position: relative;
+}
+
+.first-img {
+  /* padding: 100px 70px; */
+  position: absolute;
+  color: #e6e6e6;
+  font-size: 11px;
+}
+
+.second-img {
+  /* padding: 100px 70px; */
+  position: absolute;
+  display: none;
+}
+
+/* .tile-item:hover .second-img {
+  display: block;
+  
+} */
+
+.tile-item:hover .first-img {
+  transform: rotate(180deg);
+  background-color: #1a1a1a;
+  color: white;
 }
