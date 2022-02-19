@@ -1,0 +1,23 @@
+:root {
+    --color-light-black:#545454;
+    --color-light-grey:#E4E4E4;
+    --color-white:#FFFFFF;
+    --color-black:#1C1C1C;
+    --color-blue:#007BFF;
+    --color-gray:#969696;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container */
+
+.container {
+    max-width: 540px;
+    padding: 20px;
+    width: 100%;
+}
