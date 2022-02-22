@@ -30,14 +30,18 @@
       <!-- Create account -->
       <form class="c-create-account" method="get">
         <div class="c-create-account__wrapper">
+          <!-- Title -->
           <h1 class="c-create-account__title">Create an Account</h1>
+          <!-- Personal info -->
           <div class="c-create-account__first-last-names c-panel">
+            <!-- First name -->
             <div class="c-create-account__first-name">
               <label class="e-label">
                 <div class="e-label__text">First Name</div>
                 <input type="text" name="firstName" class="e-label__input" />
               </label>
             </div>
+            <!-- Last name -->
             <div class="c-create-account__last-name">
               <label class="e-label">
                 <div class="e-label__text">Last Name</div>
@@ -45,6 +49,7 @@
               </label>
             </div>
           </div>
+          <!-- Email -->
           <div class="c-create-account__email">
             <label class="e-label">
               <div class="e-label__text">E-mail</div>
@@ -52,6 +57,7 @@
             </label>
             <div class="c-create-account__hint">We'll never share your email with anyone else.</div>
           </div>
+          <!-- Radio gender -->
           <div class="c-create-account__gender">
             <label class="c-create-account__label-radio">
               <input type="radio" name="gender" />
@@ -64,15 +70,24 @@
               Female
             </label>
           </div>
+          <!-- Location -->
           <div class="c-create-account__location">
+            <!-- Country -->
             <div class="c-create-account__country">
-              <label class="e-label">
-                <div class="e-label__text">Country</div>
-                <select name="county" class="e-label__select">
-                  <option value="select" disabled selected>Select</option>
-                </select>
-              </label>
+              <div class="e-label">
+                <label class="e-label__wrapper">
+                  <div class="e-label__text">Country</div>
+                  <select name="county" class="e-label__select">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="ukraine">Ukraine</option>
+                  </select>
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="e-label__select-arrows">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z" fill="#969696" />
+                  </svg>
+                </label>
+              </div>
             </div>
+            <!-- City -->
             <div class="c-create-account__city">
               <label class="e-label">
                 <div class="e-label__text">City</div>
@@ -80,6 +95,7 @@
               </label>
             </div>
           </div>
+          <!-- Button -->
           <div class="c-create-account__button">
             <button type="submit" class="e-button e-button--bigger"><span>Sign Up</span></button>
           </div>
@@ -87,32 +103,60 @@
             By clicking the 'Sign Up' button, you confirm that you accept our <br />
             <a href="#" class="e-link">Terms of Use</a> and<a href="#" class="e-link">Privacy Policy</a>.
           </div>
+          <!-- Footer -->
           <footer class="footer">
             <div class="footer__wrapper">Have an account? <a href="#" class="e-link e-link--bold">Log In</a></div>
           </footer>
         </div>
       </form>
+      <!-- Profile -->
       <form class="c-profile" method="get">
         <div class="c-profile__wrapper">
+          <!-- Title -->
           <h2 class="c-profile__title">Profile</h2>
-          <div class="c-profile__upload-block c-panel">
+          <!-- Pictire upload -->
+          <div class="c-profile__upload-block c-panel c-panel--flext-start">
             <div class="c-profile__img-block">
-              <img src="" alt="" class="c-profile__img" />
+              <img src="./assets/Image.png" alt="profile img" class="c-profile__img" />
             </div>
-            <div class="c-profile__file-upload">
-              <label class="c-profile__file-label">
-                <input type="file" class="c-profile__file-input" />
-              </label>
-              
+            <div class="c-profile__file-upload-wrapper">
+              <div class="c-profile__file-upload">
+                <label class="c-profile__file-label">
+                  <div class="c-profile__input-field">
+                    <div class="c-profile__input-icon">
+                      <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3.78016 1.33333L5.00016 0H9.00016L10.2202 1.33333H12.3335C13.0668 1.33333 13.6668 1.93333 13.6668 2.66667V10.6667C13.6668 11.4 13.0668 12 12.3335 12H1.66683C0.933496 12 0.333496 11.4 0.333496 10.6667V2.66667C0.333496 1.93333 0.933496 1.33333 1.66683 1.33333H3.78016ZM3.66683 6.66667C3.66683 8.50667 5.16016 10 7.00016 10C8.84016 10 10.3335 8.50667 10.3335 6.66667C10.3335 4.82667 8.84016 3.33333 7.00016 3.33333C5.16016 3.33333 3.66683 4.82667 3.66683 6.66667ZM7.00015 8.80007C8.17835 8.80007 9.13348 7.84494 9.13348 6.66673C9.13348 5.48852 8.17835 4.5334 7.00015 4.5334C5.82194 4.5334 4.86681 5.48852 4.86681 6.66673C4.86681 7.84494 5.82194 8.80007 7.00015 8.80007Z"
+                          fill="#969696"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                  <input type="file" class="c-profile__file-input" />
+                </label>
+                <button class="c-profile__remove-button">
+                  <div class="c-profile__remove-icon">
+                    <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M4.00016 12.6667C4.00016 13.4 4.60016 14 5.3335 14H10.6668C11.4002 14 12.0002 13.4 12.0002 12.6667V4.66667H4.00016V12.6667ZM12.6668 2.66667H10.3335L9.66683 2H6.3335L5.66683 2.66667H3.3335V4H12.6668V2.66667Z" fill="#969696" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              <div class="c-profile__text">Up to 1 MB (300x300 px)</div>
             </div>
           </div>
+          <!-- Personal info -->
           <div class="c-profile__name-email-block c-panel">
+            <!-- First name -->
             <div class="c-profile__name">
               <label class="e-label">
                 <div class="e-label__text">Name</div>
                 <input type="text" name="name" class="e-label__input" />
               </label>
             </div>
+            <!-- Email -->
             <div class="c-profile__e-mail">
               <label class="e-label">
                 <div class="e-label__text">E-mail</div>
@@ -120,15 +164,24 @@
               </label>
             </div>
           </div>
+          <!-- Location -->
           <div class="c-profile__location c-panel">
+            <!-- County -->
             <div class="c-profile__country">
-              <label class="e-label">
-                <div class="e-label__text">Country</div>
-                <select name="county" class="e-label__select">
-                  <option value="select" disabled selected>Select</option>
-                </select>
-              </label>
+              <div class="e-label">
+                <label class="e-label__wrapper">
+                  <div class="e-label__text">Country</div>
+                  <select name="county" class="e-label__select">
+                    <option value="select" disabled selected>Select</option>
+                    <option value="ukraine">Ukraine</option>
+                  </select>
+                  <svg viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" class="e-label__select-arrows">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2.25L3.75 7.5H14.25L9 2.25ZM9 15.75L3.75 10.5H14.25L9 15.75Z" fill="#969696" />
+                  </svg>
+                </label>
+              </div>
             </div>
+            <!-- City -->
             <div class="c-profile__city">
               <label class="e-label">
                 <div class="e-label__text">City</div>
@@ -136,13 +189,16 @@
               </label>
             </div>
           </div>
+          <!-- Post office data -->
           <div class="c-profile__postal-data c-panel">
+            <!-- Zip code -->
             <div class="c-profile__zip-code">
               <label class="e-label">
                 <div class="e-label__text">Zip Code</div>
                 <input type="text" name="zipCode" class="e-label__input" />
               </label>
             </div>
+            <!-- Phone -->
             <div class="c-profile__phone-number">
               <label class="e-label">
                 <div class="e-label__text">Phone Number</div>
@@ -150,6 +206,7 @@
               </label>
             </div>
           </div>
+          <!-- Button -->
           <div class="c-profile__button">
             <button type="submit" class="e-button"><span>Update</span></button>
           </div>

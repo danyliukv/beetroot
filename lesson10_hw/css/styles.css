@@ -16,7 +16,7 @@
 
 body {
   background-color: var(--color-background);
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 15px;
 }
 
@@ -33,12 +33,21 @@ a {
   text-decoration: none;
 }
 
+img {
+  width: 100%;
+}
+
 .c-panel {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-/* Header */ 
+.c-panel--flext-start {
+  justify-content: flex-start;
+}
+
+/* Header */
 
 .c-header__wrapper {
   background-color: var(--color-black);
@@ -136,7 +145,7 @@ a {
   margin-right: 0px;
 }
 
-label input[type='radio'] {
+label input[type="radio"] {
   display: none;
   position: absolute;
 }
@@ -154,7 +163,7 @@ label input[type='radio'] {
 }
 
 .c-create-account__radio::after {
-  content: '';
+  content: "";
   position: absolute;
   display: none;
   top: 50%;
@@ -185,6 +194,81 @@ label input:checked ~ span::after {
 
 .c-profile__wrapper {
   padding: 20px;
+}
+
+.c-profile__upload-block {
+  margin-top: 20px;
+}
+
+.c-profile__img {
+  width: 80px;
+  height: 80px;
+  min-width: 80px;
+}
+
+.c-profile__text {
+  margin-left: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-gray);
+}
+
+.c-profile__file-upload {
+  margin-left: 20px;
+  display: flex;
+}
+
+.c-profile__file-input {
+  display: none;
+}
+
+/* .c-profile__file-input::before {
+  content: "124124";
+  display: inline-block;
+  width: 140px;
+  height: 30px; */
+
+.c-profile__input-field {
+  display: flex;
+  width: 140px;
+  height: 30px;
+  border: 1px solid var(--color-light-grey);
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+}
+
+.c-profile__remove-button {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  border-radius: 6px;
+  border: 1px solid var(--color-light-grey);
+  cursor: pointer;
+}
+
+.c-profile__input-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  transform: translate(0, -50%);
+}
+
+.c-profile__remove-icon {
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  min-width: 16px;
 }
 
 .c-profile__name-email-block {
@@ -222,6 +306,8 @@ label input:checked ~ span::after {
   border-radius: 6px;
 }
 
+.c-profile__input-field:hover,
+.c-profile__remove-button:hover,
 .c-create-account__radio:hover,
 .c-create-account__label-radio:hover,
 .e-button:hover,
@@ -241,6 +327,9 @@ label input:checked ~ span::after {
   width: 500px;
 }
 
+.e-label__wrapper {
+  position: relative;
+}
 .e-label__select {
   color: var(--color-light-black);
   width: 245px;
@@ -250,6 +339,16 @@ label input:checked ~ span::after {
   border: 1px solid var(--color-light-grey);
   border-radius: 6px;
   cursor: pointer;
+  appearance: none;
+}
+
+.e-label__select-arrows {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translate(0, 50%);
+  width: 18px;
+  height: 18px;
 }
 
 .c-create-account__button {
