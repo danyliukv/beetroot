@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.editor {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.text-editor {
+  top: 20px;
+  position: absolute;
+  opacity: 0;
+  width: 400px;
+  height: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  opacity: 0;
+}
+
+.text-editor-show {
+  opacity: 1;
+}

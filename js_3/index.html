@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>JS</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../assets/favicon.jpg" type="image/x-icon" />
+    <!-- Styles -->
+    <!-- Normalize -->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <!-- Page style -->
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__wrapper">
+        <a class="header__back-link" href="../index.html">Back</a>
+        <span class="header__title">JS</span>
+      </div>
+    </div>
+    <div class="app">
+      <form method="post" class="form" id="js-form">
+        <label class="form__label">
+          <span class="label__subtitle">Name:</span>
+          <input type="text" name="firstName" />
+        </label>
+        <label class="form__label">
+          <span class="label__subtitle">Last name:</span>
+          <input type="text" name="lastName" />
+        </label>
+        <label class="form__label">
+          <span class="label__subtitle">Email:</span>
+          <input type="text" name="email" />
+        </label>
+        <button type="submit">
+          <span>Submit</span>
+        </button>
+      </form>
+    </div>
+    <script type="module" defer src="./index.js"></script>
+  </body>
+</html>
