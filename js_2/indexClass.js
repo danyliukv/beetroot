@@ -159,3 +159,6 @@ console.log(employeeList);
 
 let empTable = new EmpTable();
 empTable.getHtml();
+
+
+let date = new Date();
