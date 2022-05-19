@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <link rel="stylesheet" href="./index.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__wrapper">
+        <a class="header__back-link" href="../../index.html">Back</a>
+        <span class="header__title">JS</span>
+      </div>
+    </div>
+    <div class="app">
+      <div class="buttons">
+        <button type="button" class="button" id="js-song-button"><span>Show Songs</span></button>
+        <button type="button" class="button" id="js-modal-button"><span>Show Modal</span></button>
+        <button type="button" class="button" id="js-traffic-light-button"><span>Show Traffic Lights</span></button>
+      </div>
+      <div class="song" id="js-song">
+        <ol class="song__list" id="js-song-list"></ol>
+      </div>
+      <div class="modal" id="js-modal">
+        <div class="modal__wrapper">
+          <div class="modal__text"><span>Modal Window</span></div>
+          <div class="modal__buttons">
+            <button type="button" class="modal__button" id="js-modal-close">
+              <span>X</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="traffic-lights" id="js-traffic-lights">
+        <div class="traffic-lights__warpper">
+          <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" id="js-red" class="light">
+            <circle cx="60" cy="60" r="50"/>
+          </svg>
+          <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" id="js-yellow" class="light">
+            <circle cx="60" cy="60" r="50" />
+          </svg>
+          <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" id="js-green" class="light light--green">
+            <circle cx="60" cy="60" r="50" />
+          </svg>
+          <div class="traffic-lights__buttons">
+            <button class="traffic-lights__button" type="button" id="js-traffic-lights-button">
+              <span>Change light</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" defer src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+:root {
+  --color-black: #2f281e;
+  --color-white: #ffffff;
+  --color-orange: #ff9900;
+  --color-button-text: #173a56;
+  --color-border: #bcd0e5;
+  --color-header: #2f281e;
+  --color-text: #544837;
+  --color-red: red;
+  --color-blue: blue;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header__wrapper {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  height: 20px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.header__back-link {
+  color: var(--color-white);
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+}
+
+.app {
+  width: 1200px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.employee__button {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--color-black);
+  outline: none;
+  background-color: var(--color-white);
+}
+
+.employee__button:hover {
+  opacity: 0.5;
+}
+
+.employee__input-block {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.error-text {
+  height: 20px;
+  color: var(--color-red);
+}
+
+.employee__input {
+  border: 1px solid var(--color-blue);
+  height: 35px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  outline: none;
+}
+
+.employee__input--error {
+  border: 1px solid var(--color-red);
+}
+
+.employee__table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 18px;
+  min-width: 400px;
+}
+
+.employee__table-head-row {
+  background-color: green;
+  color: white;
+  text-align: left;
+  font-weight: bold;
+}
+
+.body-td{
+  padding: 10px 15px;
+}

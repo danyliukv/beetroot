@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Fetch</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header__wrapper">
+        <a class="header__back-link" href="../../index.html">Back</a>
+        <span class="header__title">Fetch</span>
+      </div>
+    </div>
+    <div class="app">
+      <form method="post" class="form" id="js-form">
+        <div class="form__title">Registration form!</div>
+        <label class="form__label">
+          <span class="form__subtitle">Name:</span>
+          <input type="text" class="form__input" name="firstName" />
+          <span class="form__error"></span>
+        </label>
+        <label class="form__label">
+          <span class="form__subtitle">Last name:</span>
+          <input type="text" class="form__input" name="lastName" />
+          <span class="form__error"></span>
+        </label>
+        <label class="form__label">
+          <span class="form__subtitle">Email:</span>
+          <input type="text" class="form__input" name="email" id="js-email" required />
+          <span class="form__error" id="js-error-email"></span>
+        </label>
+        <label class="form__label">
+          <span class="form__subtitle">Username:</span>
+          <input type="text" class="form__input" name="username" id="js-username" required />
+          <span class="form__error" id="js-error-username"></span>
+        </label>
+        <label class="form__label">
+          <span class="form__subtitle">Password:</span>
+          <div class="form__input-container">
+            <input type="password" class="form__input" name="password" id="js-password-input" required />
+            <div class="form__img-block">
+              <img src="./assets/view.png" alt="eye" id="js-password-icon" />
+            </div>
+          </div>
+          <span class="form__error"></span>
+        </label>
+        <button type="submit" class="form__button">
+          <span>Subtim</span>
+        </button>
+      </form>
+      <div class="modal" id="js-modal">
+        <div class="modal__message" id="js-modal-message">
+          <button type="button" id="js-button-close" class="modal__button">
+            <span>X</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script type="module" defer src="./index.js"></script>
+  </body>
+</html>

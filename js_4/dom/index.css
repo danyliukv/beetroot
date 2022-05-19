@@ -1,0 +1,144 @@
+:root {
+  --c-black: #2f281e;
+  --c-white: #ffffff;
+  --c-modal: rgba(19, 18, 18, 0.7);
+  --c-green: green;
+  --c-red: red;
+  --c-yellow: yellow;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header__wrapper {
+  background-color: var(--c-black);
+  color: var(--c-white);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  height: 20px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.header__back-link {
+  color: var(--c-white);
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+}
+
+.app {
+  width: 1200px;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  margin-right: 20px;
+}
+
+.button:last-of-type {
+  margin-right: 0px;
+}
+
+.song {
+  opacity: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--c-modal);
+  margin: auto auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal__wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  color: var(--c-white);
+  background-color: var(--c-black);
+}
+
+.modal__buttons {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal__button {
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+
+
+.traffic-lights {
+  opacity: 0;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.traffic-lights__warpper {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+}
+
+.light {
+  stroke: var(--c-black);
+  stroke-width: 3;
+  fill: var(--c-white);
+}
+
+.light--green {
+  fill: var(--c-green);
+}
+
+.light--red {
+  fill: var(--c-red);
+}
+
+.light--yellow {
+  fill: var(--c-yellow);
+}
+
+.traffic-lights__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: all;
+}
