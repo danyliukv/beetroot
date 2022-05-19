@@ -1,0 +1,25 @@
+{
+  "name": "teamplate",
+  "version": "2.0.0",
+  "description": "Teamplate for development",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solodkui/teamplate.git"
+  },
+  "keywords": [
+    "teamplate",
+    "student",
+    "development",
+    "beetroot"
+  ],
+  "author": "solodkui arthur solodkuIA@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solodkui/teamplate/issues"
+  },
+  "homepage": "https://github.com/solodkui/teamplate#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  }
+}

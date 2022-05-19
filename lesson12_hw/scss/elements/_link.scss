@@ -1,0 +1,10 @@
+.e-link {
+  padding: 5px;
+  color: $c-white;
+
+  &--orange {
+    padding: 20px 25px;
+    background-color: $c-orange;
+    border-radius: 5px;
+  }
+}

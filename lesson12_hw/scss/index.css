@@ -1,0 +1,158 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.app {
+  width: 1600px;
+  margin: 0 auto;
+  padding: 0 250px;
+  position: relative;
+}
+
+.e-link {
+  padding: 5px;
+  color: #ffffff;
+}
+
+.e-link--orange {
+  padding: 20px 25px;
+  background-color: #ee4d47;
+  border-radius: 5px;
+}
+
+.c-header {
+  position: relative;
+  z-index: 100;
+}
+
+.c-header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+
+.c-header__logo-block {
+  width: 215px;
+  height: 50px;
+}
+
+.c-navigation__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-navigation__item {
+  margin-right: 100px;
+}
+
+.c-navigation__item:last-child {
+  margin-right: 0px;
+}
+
+.c-baner {
+  max-width: 750px;
+  max-height: 300px;
+  width: 100%;
+  height: 100%;
+}
+
+.c-baner__title {
+  position: relative;
+  margin-top: 90px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 100%;
+}
+
+.c-baner__button {
+  position: relative;
+  margin-top: 80px;
+}
+
+.c-baner__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.c-about-us {
+  margin-top: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.c-about-us__content {
+  max-width: 570px;
+  width: 100%;
+}
+
+.c-about-us__title {
+  color: #ee4d47;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.c-about-us__text {
+  max-width: 470px;
+  width: 100%;
+  margin-top: 40px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.c-about-us__highlighted-text {
+  margin-top: 70px;
+  display: inline-block;
+  padding: 30px 55px;
+  background-color: #fcddd4;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --color-black: #16133d;
+  --color-white: #e5e5e5;
+  --color-green: #3db370;
+  --color-lightgrey: #e5eaf4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  color: var(--color-black);
+}
+
+/* Container */
+
+.container {
+  width: 1024px;
+  padding: 0 64px;
+  margin: 0 auto;
+}
+
+/* Global header */
+
+.c-global-header__wrapper {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  height: 60px;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.c-global-header-link {
+  color: var(--color-white);
+  text-decoration: none;
+  position: absolute;
+  left: 20px;
+}
+
+/* Header */
+
+.c-header {
+  margin-top: 80px;
+}
+
+.c-header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.c-header__img-block {
+  width: 28px;
+  height: 28px;
+}
+
+.c-header__text {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 35px;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 15px;
+}
+
+/* Cards */
+.c-build-experience__cards {
+  margin-top: 35px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.c-build-experience__card {
+  border: 1px solid var(--color-lightgrey);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.c-build-experience__card:hover {
+  border: 1px solid var(--color-green);
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.c-build-experience__title {
+  margin-top: 30%;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 21px;
+}

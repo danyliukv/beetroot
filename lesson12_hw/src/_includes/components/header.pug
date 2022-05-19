@@ -1,0 +1,15 @@
+mixin header()
+  header.c-header
+    .c-header__wrapper
+      .c-header__logo-block
+        +logo()
+      nav.c-navigation
+        ul.c-navigation__list
+          li.c-navigation__item
+            +link('#', 'ABOUT')(class="e-link")
+          li.c-navigation__item
+            +link('#', 'HOW TO')(class="e-link")  
+          li.c-navigation__item
+            +link('#', 'FAQS')(class="e-link")
+          li.c-navigation__item
+            +link('#', 'CONTACT US')(class="e-link e-link--orange")    
